@@ -5,49 +5,82 @@
   margin: 0;
   font-family: "Comic Neue", cursive;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
-  background: #000000e5;
+  background: #1b1b1be5;
   color: #ffff;
   height: 100vh;
 }
 
 .content {
+  margin-top: 5rem;
   margin-left: 5rem;
   margin-right: 5rem;
 }
+
 .nav {
   display: flex;
   align-items: center;
   justify-items: center;
-  justify-content: space-between;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+  height: 4rem;
+  background-color: rgb(29, 32, 33);
+  position: fixed;
+  width: 100vw;
+  z-index: 30;
+  top: 0;
+  overflow: hidden;
 }
 
-.nav a {
-  margin: 0.5rem;
+.nav .left-nav {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+
+.nav .menu a {
+  padding-top: 1.5rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  padding-bottom: 1.2rem;
   font-size: 1.2rem;
   font-weight: bold;
   color: #ffff;
   cursor: pointer;
 }
 .nav a:hover {
-  color: #e3e3e3;
+  background-color: rgb(15, 16, 17);
 }
 
 .nav .logo {
   font-size: 1.5rem;
   font-weight: bolder;
+  margin-right: 3rem;
+  margin-left: 1rem;
 }
 .nav .icon {
   display: flex;
-  justify-content: space-between;
-  font-size: 1.2rem;
-  width: 5rem;
+  margin-right: 1rem;
+}
+
+.nav .icon a {
+  font-size: 1.35rem;
   cursor: pointer;
   font-weight: bolder;
+  align-items: baseline;
+  color: #ffff;
+  padding-top: 1.5rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.nav .categories {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .view {
@@ -79,7 +112,7 @@ body {
 .card h2 {
   position: absolute;
   bottom: 0;
-  background: rgba(177, 177, 177, 0.36);
+  background: rgba(177, 177, 177, 0.08);
   backdrop-filter: blur(5.5px);
   width: 100%;
   min-height: 5rem;
@@ -94,8 +127,4 @@ body {
   font-size: 1.2rem;
   top: 0;
   background: #000000e4;
-}
-
-.card h2:hover {
-  background: rgba(177, 177, 177, 0.08);
 }

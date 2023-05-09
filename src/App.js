@@ -4,10 +4,13 @@ import Nav from "./components/Nav";
 import TopAnime from "./components/TopAnime";
 const App = () => {
   return (
-    <div className="content">
+    <>
       <Nav />
-      <TopAnime />
-    </div>
+
+      <div className="content">
+        <TopAnime />
+      </div>
+    </>
   );
 };
 export default App;
