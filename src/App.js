@@ -9,11 +9,7 @@ const App = () => {
       <Nav />
       <div className="content">
         <div className="containerStyles">
-          <div className="sliderStyles">
-            <div className="slideStyles">
-              <ImageSlider />
-            </div>
-          </div>
+          <ImageSlider />
         </div>
 
         <TopAnime />
