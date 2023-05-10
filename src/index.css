@@ -26,8 +26,7 @@ body {
   justify-items: center;
   height: 4rem;
   background-color: rgb(29, 32, 33);
-  position: fixed;
-  width: 100vw;
+  position: sticky;
   z-index: 30;
   top: 0;
   overflow: hidden;
